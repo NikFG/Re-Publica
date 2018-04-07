@@ -1,0 +1,38 @@
+p {
+	text-align: center;
+}
+
+h5{
+	text-align: right;
+}
+
+h1 {
+	text-align: center;
+}
+
+a:link, a:visited, a:active {
+	text-decoration:none;
+	color: black;
+
+}
+
+
+a:hover {
+	text-decoration: underline; 
+	color: black; 
+	background:#BEBEBE; 
+}
+
+form {
+	align-items: center;
+	border: groove;
+	border-radius: 5px;
+	height: 480px;
+	width: 550px;
+	display: inline-block;
+
+}
+
+img {
+	width: 150px;
+}

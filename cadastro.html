@@ -1,0 +1,59 @@
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="css/cadastro.css">
+</head>
+<body>
+	<center>
+	<br><br><br>
+		<form>
+		
+			<h2>Cadastre-se</h2>
+			<p>___________________________________________________</p>
+			<p>Nome: <input type="text" name="nome" placeholder="Nome"></p>		
+			<p>CPF: <input type="number" name="cpf" placeholder="123.456.789-01"></p>
+			<p>Estado:<select name="estados-brasil">
+				<option value="Escolha">Escolha</option>
+				<option value="AC">Acre</option>
+				<option value="AL">Alagoas</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="DF">Distrito Federal</option>
+				<option value="ES">Espírito Santo</option>
+				<option value="GO">Goiás</option>
+				<option value="MA">Maranhão</option>
+				<option value="MT">Mato Grosso</option>
+				<option value="MS">Mato Grosso do Sul</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PB">Paraíba</option>
+				<option value="PR">Paraná</option>
+				<option value="PE">Pernambuco</option>
+				<option value="PI">Piauí</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="SP">São Paulo</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantins</option>
+			</select></p>
+			<p>Cidade: <input type="text" name="cidade" placeholder="Cidade"></p>
+			<p>Email: <input type="email" name="email" placeholder="exemplo@exemplo.com"></p>
+			<p>Telefone: <input type="number" name="tel" placeholder="(DD)91234-5678"></p>
+			<p>Senha: <input type="password" name="senha" placeholder="Senha"></p>
+			<p>Confirme sua senha: <input type="password" name="senhaconf" placeholder="Confirme sua senha"></p>
+			<p><input type="button" value="Cancelar"
+				class="button_active" onclick="location.href='index.html';" />
+				<input type="submit" name="enviar" value="Confirmar cadastro"></p>
+		</form>
+	</center>
+
+</body>
+</html>
