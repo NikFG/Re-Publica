@@ -1,0 +1,8 @@
+Pessoa->(herança)Cliente Funcionario(cadastro)
+Republica
+Ofertas
+Estado
+Cidade
+Bairro
+Logradouro
+Locação
