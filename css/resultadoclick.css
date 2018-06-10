@@ -8,43 +8,38 @@ body{
 
 /*LOGO*/
 img#logoSite{
+
 	width: 200px;
 	height: 100px;
 }
 
 a#textoResultados{  /*EXBINDO RESULTADOS PARA XXX */
+
 font-family: optima;
 font-size: 23px;
 color: white;
 }
 
-
-
-
-
 /*DIVFILTRO*/
+
 
 div#divFiltro {
 
 	background-color: white;
 	float: left;
 	border: 1px solid black; 
-	 border-radius:12px;
 	width: 200px;
-	height: 350px;
+	height: 370px;
 }
 
 
-div#divFiltro ul#ulFiltrocidade a#afiltroFormiga { /*FILTRO DE FORMIGA ID*/
+div#divFiltro li#liFiltrocidade a#afiltroFormiga { /*FILTRO DE FORMIGA ID*/
 	font-family: optima;
 	font-size: 18px;
-	width: 130px;
-	
 }
-div#divFiltro ul#ulFiltropreco a#afiltroPreco { /*FILTRO DE 150 A 300 ID*/
+div#divFiltro li#liFiltropreco a#afiltro150a300 { /*FILTRO DE 150 A 300 ID*/
 	font-family: optima;
 	font-size: 18px;
-
 }
 
 
@@ -55,8 +50,6 @@ div#divAnuncioprincipal {
 
 	margin: auto;
 	border: 2px solid black; 
-
- border-radius:12px;
 	height: 380px;
 	background: url('../imgs/anuncio001.png');
 
@@ -65,20 +58,32 @@ div#divAnuncioprincipal {
 
 
 
-
 /*DIVTEXTO*/
 
 
-
-
 div#divAnunciotexto {
-	background-color: red;
+
+
+	border: 2px solid black; 
+	width: 30%;
+}
+
+
+div#divAnunciotexto li#liAnunciotexto{
+	background-color: blue;
+	height: 55px;
+	width: 100%;
+}
+
+
+
+
+
+
+div#divAnunciotexto li#liAnunciotexto a#aAnunciotexto { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
-	border: 2px solid black; 
-	 border-radius:12px;
-	width: 40%;
 }
 
 
@@ -88,17 +93,42 @@ div#divAnunciotexto {
 /*DIVTEXTO2*/
 
 
-div#divAnunciotexto2{
+div#divAnunciotexto2 {
 	margin: auto;
+	float: left;
+
 	border: 2px solid black; 
-	 border-radius:12px;
-	background-color: white;
-	width: 40%;
+	width: 50%;
+
+}
+
+
+div#divAnunciotexto2 li#liAnunciotexto2{
+	
+	background-color: red;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+div#divAnunciotexto2 li#liAnunciotexto2 a#aAnunciotexto2 { 
 	font: optima;
 	font-size: 18px;
 	color: black;
 }
 
+div#divAnunciotexto2 li#liAnunciotexto2 a#aAnunciotextonota2 { 
+	font: optima;
+	font-size: 18px;
+	color: black;
+}
+div#divAnuncio002 li#liAnunciotexto2 a#aAnuncioendereco22 { 
+	font: optima;
+	font-size: 18px;
+	color: black;
+}
 
 
 
@@ -107,10 +137,29 @@ div#divAnunciotexto2{
 
 div#divAnunciotexto3 {
 	margin: auto;
-	width: 40%;
+	float: right;
+	height: 100%;
 	border: 2px solid black; 
-	 border-radius:12px;
-	background-color: white;
+	width: 50%;
+}
+
+
+div#divAnunciotexto3 li#liAnunciotexto3{
+	background-color: red;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+div#divAnunciotexto3 li#liAnunciotexto3 a#aAnunciotexto3{ 
+	font-family: optima;
+	font-size: 18px;
+	color: black;
+}
+
+div#divAnunciotexto2 li#liAnunciotexto2 a#aAnunciotextovalor3 { 
 	font-family: optima;
 	font-size: 18px;
 	color: black;

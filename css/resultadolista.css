@@ -22,29 +22,23 @@ a#textoResultados{  /*EXBINDO RESULTADOS PARA XXX */
 
 /*DIVFILTRO*/
 
-
 div#divFiltro {
-
 	background-color: white;
 	float: left;
 	border: 1px solid black; 
-	 border-radius:12px;
 	width: 200px;
-	height: 350px;
+	height: 370px;
 }
 
 
-div#divFiltro ul#ulFiltrocidade a#afiltroFormiga { /*FILTRO DE FORMIGA ID*/
+div#divFiltro li#liFiltrocidade a#afiltroFormiga { /*FILTRO DE FORMIGA ID*/
 	font-family: optima;
 	font-size: 18px;
-	width: 130px;
-	
 }
-div#divFiltro ul#ulFiltropreco a#afiltroPreco { /*FILTRO DE 150 A 300 ID*/
+div#divFiltro li#liFiltropreco a#afiltro150a300 { /*FILTRO DE 150 A 300 ID*/
 	font-family: optima;
 	font-size: 18px;
-
-} 
+}
 
 
 /*DIV001*/
@@ -52,7 +46,6 @@ div#divFiltro ul#ulFiltropreco a#afiltroPreco { /*FILTRO DE 150 A 300 ID*/
 div#divAnuncio001 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
 	margin: auto;
 	border: 2px solid black; 
-	 border-radius:12px;
 	height: 180px;
 	background: url('../imgs/anuncio001.png');
 	background-size: 384px 200px;
@@ -61,10 +54,9 @@ div#divAnuncio001 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO V
 
 
 
-div#divAnuncio001 ul#ulAnuncio001 {
+div#divAnuncio001 li#liAnuncio001 {
 	font-size: 10px;
-	background-color: white;
-	 border-radius:12px;
+	background-color: blue;
 	float: right;
 	width: 50%;
 	height: 100%;
@@ -74,18 +66,18 @@ div#divAnuncio001 ul#ulAnuncio001 {
 
 
 
-div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001nome { 
+div#divAnuncio001 li#liAnuncio001 a#aAnuncio001nome { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
 }
 
-div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001endereco { 
+div#divAnuncio001 li#liAnuncio001 a#aAnuncio001endereco { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
 }
-div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001contato { 
+div#divAnuncio001 li#liAnuncio001 a#aAnuncio001contato { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
@@ -101,7 +93,6 @@ div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001contato {
 div#divAnuncio002 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
 	margin: auto;
 	border: 2px solid black; 
-	 border-radius:12px;
 	height: 180px;
 	background: url('../imgs/anuncio002.png');
 	background-size: 384px 200px;
@@ -110,9 +101,9 @@ div#divAnuncio002 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO V
 
 
 
-div#divAnuncio002 ul#ulAnuncio002 {
+div#divAnuncio002 li#liAnuncio002 {
 	font-size: 10px;
-	background-color: white;
+	background-color: blue;
 	float: right;
 	width: 50%;
 	height: 100%;
@@ -122,18 +113,18 @@ div#divAnuncio002 ul#ulAnuncio002 {
 
 
 
-div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002nome { 
+div#divAnuncio002 li#liAnuncio002 a#aAnuncio002nome { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
 }
 
-div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002endereco { 
+div#divAnuncio002 li#liAnuncio002 a#aAnuncio002endereco { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
 }
-div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002contato { 
+div#divAnuncio002 li#liAnuncio002 a#aAnuncio002contato { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
@@ -146,7 +137,6 @@ div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002contato {
 div#divAnuncio003 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
 	margin: auto;
 	border: 2px solid black; 
-	 border-radius:12px;
 	height: 180px;
 	background: url('../imgs/anuncio003.png');
 	background-size: 384px 200px;
@@ -155,9 +145,9 @@ div#divAnuncio003 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO V
 
 
 
-div#divAnuncio003 ul#ulAnuncio003 {
+div#divAnuncio003 li#liAnuncio003 {
 	font-size: 10px;
-	background-color: white;
+	background-color: blue;
 	float: right;
 	width: 50%;
 	height: 100%;
@@ -167,18 +157,18 @@ div#divAnuncio003 ul#ulAnuncio003 {
 
 
 
-div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003nome { 
+div#divAnuncio003 li#liAnuncio003 a#aAnuncio003nome { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
 }
 
-div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003endereco { 
+div#divAnuncio003 li#liAnuncio003 a#aAnuncio003endereco { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
 }
-div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003contato { 
+div#divAnuncio003 li#liAnuncio003 a#aAnuncio003contato { 
 	font-family: optima;
 	font-size: 20px;
 	color: black;
