@@ -1,6 +1,6 @@
 /*Imagem do título*/
 #img-logo{
-	width: 180px;
+	width: 220px;
 }
 
 /*Layout geral*/
@@ -33,12 +33,7 @@ form input{
 	width: 50%;
 }
 
-.btn-success{
-	margin-top: 15px;
-	margin-left: 15px;
+body{
+	background-color: #e0ebeb;
+ 
 }
-
-.btn-secondary{
-	margin-top: 15px;
-}
-
