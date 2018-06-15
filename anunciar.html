@@ -2,12 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" type="text/css" href="css/anunciar.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="jquery.mask.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
 
 <script>
 $(document).ready(function(e) {
@@ -21,7 +21,7 @@ $(document).ready(function(e) {
 </script>
 	<title>Anunciar</title>
 </head>
-<body>
+<body bgcolor="#d1e0e0" >
 <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -33,12 +33,13 @@ $(document).ready(function(e) {
       <div class="row conteudo">
         <div class="col-sm-12">
         <form>
+
           <h1 id="titulo">Cadastre sua Republica</h1>
-          <form class="form-inline">
+        
 
           	<div class="form-group">
           		<label for="titulo" >Título do anúncio</label>
-          		<input type="text" class="form-control" id="titulo" placeholder="Ex: casa da mãe Joana">
+          		<input type="text" class="form-control" id="titulo" placeholder="Ex: casa da mãe Joana" required>
           	</div>
           	
           	<div class="form-group">
@@ -47,11 +48,11 @@ $(document).ready(function(e) {
           	</div>
           	<div class="form-group">
          		<label for="endereco" >Endereço</label>
-          		<input type="text" class="form-control" id="endereco" placeholder="Rua/Bairro">
+          		<input type="text" class="form-control" id="endereco" placeholder="Rua/Bairro" required>
           	</div>
           	<div class="form-group">
           	<label for="tel">Telefone de contato:</label>
-			<input name="phone"  type="text" class="msk-celular" placeholder="Ex.: (00) 00000-0000" /> 
+			<input name="phone"  type="text" class="msk-celular" placeholder="Ex.: (00) 00000-0000" required /> 
 			</div>
 			<div class="form-group">
 				<label for="tipo">Tipo de Imóvel</label>
@@ -77,12 +78,18 @@ $(document).ready(function(e) {
 			</select>
 		</div>
 		 <div class="form-group">
-    <label for="exampleInputFile">Upload Imagem</label>
-    <input type="file" id="upload">
-    <p class="help-block">Máximo de 5 arquivos.</p>
+    <label for="exampleInputFile">Inserir Imagens</label>
+    <input type="file" id="upload" name="upload" class="btn btn-success"  accept="image/png, image/jpeg"  multiple />
+    <p class="help-block">Somente arquivos (.png) e (.jpeg). </p>
   </div>
+        <br>
+       
+       <center>
+		    <button class="btn btn-primary btn-md" type="submit">Concluir</button> 
 
-			<center><button class="btn btn-secondary" type="reset">Limpar</button><button class="btn btn-success" type="submit">Concluir</button></center>
+        <button class="btn btn-default btn-md" type="reset">Limpar</button></center>
+
+
 </div>
 </form>
 
