@@ -1,0 +1,44 @@
+/*Imagem do título*/
+#img-logo{
+	width: 180px;
+}
+
+/*Layout geral*/
+.row{
+	margin-top: 15px;
+}
+
+/*Título da página*/
+#titulo{
+	font-size: 25px;
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Layout da classe conteúdo*/
+.conteudo{
+	margin-top: 30px;
+	border-top: 1px solid rgba(190,190,190,0.5);
+	padding-top: 15px;
+}
+
+/*Layout do form*/
+form{
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+
+form input{
+	display: block;
+	width: 50%;
+}
+
+.btn-success{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.btn-secondary{
+	margin-top: 15px;
+}
+
