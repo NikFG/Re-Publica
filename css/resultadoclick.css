@@ -18,6 +18,7 @@ img#logoSite{
 	height: 100px;
 }
 
+<<<<<<< HEAD
 #busca{
 	border: black solid 3px;
 	background-color: white;
@@ -42,10 +43,80 @@ img#logoSite{
 	font-size: 20px;
 	border-radius: 22px;
 
+=======
+a#textoResultados{  /*EXBINDO RESULTADOS PARA XXX */
+font-family: optima;
+font-size: 23px;
+color: white;
 }
 
 
 
+
+
+/*DIVFILTRO*/
+
+div#divFiltro {
+
+	background-color: white;
+	float: left;
+	border: 1px solid black; 
+	 border-radius:12px;
+	width: 200px;
+	height: 350px;
+}
+
+
+div#divFiltro ul#ulFiltrocidade a#afiltroFormiga { /*FILTRO DE FORMIGA ID*/
+	font-family: optima;
+	font-size: 18px;
+	width: 130px;
+	
+}
+div#divFiltro ul#ulFiltropreco a#afiltroPreco { /*FILTRO DE 150 A 300 ID*/
+	font-family: optima;
+	font-size: 18px;
+
+}
+
+
+/*DIVPRINCIPAL*/
+
+
+div#divAnuncioprincipal {
+
+	margin: auto;
+	border: 2px solid black; 
+
+ border-radius:12px;
+	height: 380px;
+	background: url('../imgs/anuncio001.png');
+
+	width: 50%;
+}
+
+
+
+
+/*DIVTEXTO*/
+
+
+
+
+div#divAnunciotexto {
+	background-color: red;
+	font-family: optima;
+	font-size: 20px;
+	color: black;
+	border: 2px solid black; 
+	 border-radius:12px;
+	width: 40%;
+>>>>>>> bea772cbdfe06eea694c61883b54f5c0933da0f0
+}
+
+
+
+<<<<<<< HEAD
 #embaixoAnuncio3{
 	color: black;
 	background-color: white;
@@ -55,6 +126,39 @@ img#logoSite{
 	height: 100px;
 	overflow: auto;
 
+=======
+
+
+/*DIVTEXTO2*/
+
+
+div#divAnunciotexto2{
+	margin: auto;
+	border: 2px solid black; 
+	 border-radius:12px;
+	background-color: white;
+	width: 40%;
+	font: optima;
+	font-size: 18px;
+	color: black;
+}
+
+
+
+
+/*DIVTEXTO3*/
+
+
+div#divAnunciotexto3 {
+	margin: auto;
+	width: 40%;
+	border: 2px solid black; 
+	 border-radius:12px;
+	background-color: white;
+	font-family: optima;
+	font-size: 18px;
+	color: black;
+>>>>>>> bea772cbdfe06eea694c61883b54f5c0933da0f0
 }
 #voltar{
 	color: white;

@@ -33,11 +33,13 @@ form input{
 	width: 215px;
 }
 
-.btn-success{
-	margin-top: 15px;
+.btn-primary{
 	margin-left: 15px;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 .btn-secondary{
-	margin-top: 15px;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }

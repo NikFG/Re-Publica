@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" type="text/css" href="css/anunciar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
+
+<script>
+$(document).ready(function(e) {
+	var obj = $('.msk-celular');
+		
+		$(obj).mask(($(obj).val().length > 13) ? '(00)00000-0000' : '(00)00000-0000', 
+		{onKeyPress: function(phone, e, currentField, options){
+		 var new_sp_phone = phone.match(/^(\(11\)9(5[0-9]|6[0-9]|7[01234569]|8[0-9]|9[0-9])[0-9]{1})/g);
+		 new_sp_phone ? $(currentField).mask('(00)00000-0000', options) : $(currentField).mask('(00)00000-0000', options)}});
+});
+</script>
+	<title>Anunciar</title>
+</head>
+<body bgcolor="#d1e0e0" >
+<div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <center>
+          <a href="index.html"><img id="img-logo" src="img/logo_transp.png"></a>
+          </center>
+        </div>
+      </div>
+      <div class="row conteudo">
+        <div class="col-sm-12">
+        <form>
+
+          <h1 id="titulo">Cadastre sua Republica</h1>
+        
+
+          	<div class="form-group">
+          		<label for="titulo" >Título do anúncio</label>
+          		<input type="text" class="form-control" id="titulo" placeholder="Ex: casa da mãe Joana" required>
+          	</div>
+          	
+          	<div class="form-group">
+          		<label for="descricao">Descrição</label>
+          		<textarea class="form-control" rows="3" id="descricao" placeholder="Digite oque achar necessário que o locatário saiba ;)"></textarea>
+          	</div>
+          	<div class="form-group">
+         		<label for="endereco" >Endereço</label>
+          		<input type="text" class="form-control" id="endereco" placeholder="Rua/Bairro" required>
+          	</div>
+          	<div class="form-group">
+          	<label for="tel">Telefone de contato:</label>
+			<input name="phone"  type="text" class="msk-celular" placeholder="Ex.: (00) 00000-0000" required /> 
+			</div>
+			<div class="form-group">
+				<label for="tipo">Tipo de Imóvel</label>
+				<select class="form-control" >
+				<option>Casa</option>
+				<option>Apartamento</option>
+			</select>
+		</div>
+			<div class="form-group">
+				<label for="tipo">Tipo de Quarto</label>
+				<select class="form-control" >
+				<option>Individual</option>
+				<option>Compartilhado</option>
+			</select>
+		</div>
+
+			<div class="form-group">
+				<label for="tipo">Número de Banheiros</label>
+				<select class="form-control" >
+				<option>Um</option>
+				<option>Dois</option>
+				<option>Dois ou mais</option>
+			</select>
+		</div>
+		 <div class="form-group">
+    <label for="exampleInputFile">Inserir Imagens</label>
+    <input type="file" id="upload" name="upload" class="btn btn-success"  accept="image/png, image/jpeg"  multiple />
+    <p class="help-block">Somente arquivos (.png) e (.jpeg). </p>
+  </div>
+        <br>
+       
+       <center>
+		    <button class="btn btn-primary btn-md" type="submit">Concluir</button> 
+
+        <button class="btn btn-default btn-md" type="reset">Limpar</button></center>
+
+
+</div>
+</form>
+
+	
+  </body>
+</html>
