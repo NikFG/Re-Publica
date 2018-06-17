@@ -3,87 +3,81 @@
 <head>
 	<meta http-equiv="content-type" content="txt/html"; charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 	<link rel="stylesheet" type="text/css" href="css/resultadoclick.css">
 	<title>Re-Publica</title>
+
 </head>
 <body>
-	<center>
-
-		<img id="logoSite"src="imgs/logo_transp.png">
-
-	<p><a id="textoResultados">Exibindo resultados para "XXX"..</a></p><br>
-
-	<!--DIVFILTROS-->
-	<div id="divFiltro" class="container">
-		<li id="liFiltrocidade">	<!-- FILTRO CIDADE -->
-			<span>Localização:</span><br> 
-			<a id="afiltroFormiga" href="https://www.google.com/">Formiga</a>
-
-			<br>Divinópolis<br>Itapecerica<br>Samonte</li> ________________________
-
-			<br><br>
-
-			<li id="liFiltropreco"> <!-- FILTRO CIDADE -->
-				<span>Valor:</span><br>
-				<a id="afiltro150a300" href="https:/www.youtube.com/">De R$150,00 a R$300,00</a>
-				<br>De R$300,00 a R$500,00<br>De R$500,00 a R$800,00<br></li> 
-
-			</div>
-
-			<!--DIVPRINCIPAL-->
-			<div id="divAnuncioprincipal">
-
-				<a id="fotoprincipal"></a>	
-			</div>
-			<br>
-
-			<!--DIVTEXTO-->
-			<div id="divAnunciotexto">
-
-
-				<li id="liAnunciotexto">
-
-						<a id="aAnunciotexto"> República Mandela</a> <br><br>
-				
-				</li>
-					<div id="divAnunciotexto2">
-
-
-				<li id="liAnunciotexto2">
-					<span>
-						<a id="aAnunciotexto2"> Quantidade de quartos:</a> <br><br>
-						<a id="aAnunciotextonota2">Nota:</a><br>
-						<a id="aAnunciotextoendereco22">Endereço:</a>
-					</span>
-				</li>
-
-			</div>
-				<div id="divAnunciotexto3">
-
-
-				<li id="liAnunciotexto3">
-					<span>
-						<a id="aAnunciotexto3">Contato:</a> <br><br>
-						<a id="aAnunciotextovalor3">Valor Aproximado:</a><br>
-
-					</span>
-				</li>
-
-			</div>
-				
-
-			</div>
-
-			<br>
-
+	<div class="container-fluid">
 		
 
+			<div class="row" >
+				<div class="container align-self-center d-flex justify-content-center"><!--DEIXAR NO CENTRO-->
+           		 <img class="img-responsive" src="imgs/logo_transp.png" alt="Imagem" id="logoSite" />
+       			</div>   
+			</div>
 
+
+			<br><br><br><br><br><br>
+
+			<div class="row">
+				<div class="col-sm-2" id="busca">
+					<b>Valor:</b>	
+					<a id="afiltro150a300" href="#"><br>De R$150,00 a R$300,00</a>
+					<br>De R$300,00 a R$500,00<br>De R$500,00 a R$800,00</ul> 
+					<br><br>
+					
+
+						<b>Localizacao:</b>
+				<a id=afitlrodivi" href="#"><br>Divinópolis</a><br>Itapecerica<br>Samonte</ul>
 			
-	
-			<center><a href="resultadolista.html">voltar</a></center>
+				</div>	
 
-</center>
 
-		</body>
-		</html>
+			<div class="col-sm-6" id="anuncio"><!--DIV DO ANUNCIO, FOTO--></div>
+
+			</div><!--FIM DO PRIMEIRO ROW-->
+
+
+			<!--DIV EM BAIXO DA FOTO-- (NOME DA REPUBLICA)-->
+			<div class="row" id="embaixoAnuncio">
+				
+					<div class="container align-self-center d-flex justify-content-center">	
+				
+						<div class="col-sm-5" id="embaixoAnuncio2"><center><b>AAAABAA</b></center></div> 
+					</div>
+					
+			
+			</div>
+
+
+			<!--DIV EM BAIXO DA FOTO-- (INFORMAÇÕES)-->
+
+
+				<div class="row" id="embaixoAnuncio">
+				
+					<div class="container align-self-center d-flex justify-content-center">	
+				
+						<div class="col-sm-5" id="embaixoAnuncio3">Contato:<br>Quantidade de Quartos:<br>Valor Aproximado:</div> 
+					</div>
+					
+				</div>	
+			
+
+
+
+
+				<a id="voltar" href="resultadolista.html"><center>VOLTAR</center></a>
+	</div>	<!--FIM DO FLUID-->
+
+
+
+
+</body>
+</html>

@@ -3,171 +3,59 @@ body{
 	background: url('../imgs/baner.jpg') no-repeat ;
 	height: 100%;
 	width: 100%;
+	font-family: optima;
 }
 
-
+.row{
+	padding: 5px;
+}
+.container-fluid{
+	padding: 20px;
+}
 /*LOGO*/
 img#logoSite{
-
 	width: 200px;
 	height: 100px;
 }
 
-a#textoResultados{  /*EXBINDO RESULTADOS PARA XXX */
-
-font-family: optima;
-font-size: 23px;
-color: white;
-}
-
-/*DIVFILTRO*/
-
-
-div#divFiltro {
-
+#busca{
+	border: black solid 3px;
 	background-color: white;
-	float: left;
-	border: 1px solid black; 
-	width: 200px;
-	height: 370px;
+	margin-right: 110px;
+	height: 200px;
+	overflow: auto;
+	border-radius:22px;
+
 }
 
-
-div#divFiltro li#liFiltrocidade a#afiltroFormiga { /*FILTRO DE FORMIGA ID*/
-	font-family: optima;
-	font-size: 18px;
-}
-div#divFiltro li#liFiltropreco a#afiltro150a300 { /*FILTRO DE 150 A 300 ID*/
-	font-family: optima;
-	font-size: 18px;
-}
-
-
-/*DIVPRINCIPAL*/
-
-
-div#divAnuncioprincipal {
-
-	margin: auto;
-	border: 2px solid black; 
-	height: 380px;
+#anuncio{
+	border: black solid 2px;
 	background: url('../imgs/anuncio001.png');
-
-	width: 50%;
+	height: 350px;
+	border-radius:12px;
 }
 
-
-
-/*DIVTEXTO*/
-
-
-div#divAnunciotexto {
-
-
-	border: 2px solid black; 
-	width: 30%;
-}
-
-
-div#divAnunciotexto li#liAnunciotexto{
-	background-color: blue;
-	height: 55px;
-	width: 100%;
-}
-
-
-
-
-
-
-div#divAnunciotexto li#liAnunciotexto a#aAnunciotexto { 
-	font-family: optima;
+#embaixoAnuncio2{
+	color: white;
+	background-color: red;
+	border: black solid 2px;
 	font-size: 20px;
+	border-radius: 22px;
+
+}
+
+
+
+#embaixoAnuncio3{
 	color: black;
-}
-
-
-
-
-
-/*DIVTEXTO2*/
-
-
-div#divAnunciotexto2 {
-	margin: auto;
-	float: left;
-
-	border: 2px solid black; 
-	width: 50%;
+	background-color: white;
+	border: black solid 2px;
+	font-size: 20px;
+	border-radius: 22px;
+	height: 100px;
+	overflow: auto;
 
 }
-
-
-div#divAnunciotexto2 li#liAnunciotexto2{
-	
-	background-color: red;
-	height: 100%;
-	width: 100%;
+#voltar{
+	color: white;
 }
-
-
-
-
-div#divAnunciotexto2 li#liAnunciotexto2 a#aAnunciotexto2 { 
-	font: optima;
-	font-size: 18px;
-	color: black;
-}
-
-div#divAnunciotexto2 li#liAnunciotexto2 a#aAnunciotextonota2 { 
-	font: optima;
-	font-size: 18px;
-	color: black;
-}
-div#divAnuncio002 li#liAnunciotexto2 a#aAnuncioendereco22 { 
-	font: optima;
-	font-size: 18px;
-	color: black;
-}
-
-
-
-/*DIVTEXTO3*/
-
-
-div#divAnunciotexto3 {
-	margin: auto;
-	float: right;
-	height: 100%;
-	border: 2px solid black; 
-	width: 50%;
-}
-
-
-div#divAnunciotexto3 li#liAnunciotexto3{
-	background-color: red;
-	height: 100%;
-	width: 100%;
-}
-
-
-
-
-div#divAnunciotexto3 li#liAnunciotexto3 a#aAnunciotexto3{ 
-	font-family: optima;
-	font-size: 18px;
-	color: black;
-}
-
-div#divAnunciotexto2 li#liAnunciotexto2 a#aAnunciotextovalor3 { 
-	font-family: optima;
-	font-size: 18px;
-	color: black;
-}
-
-
-
-
-
-
-

@@ -3,98 +3,115 @@
 <head>
 	<meta http-equiv="content-type" content="txt/html"; charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
 	<link rel="stylesheet" type="text/css" href="css/resultadolista.css">
+	
 	<title>Re-Publica</title>
+
 </head>
 <body>
-	<center>
+
+<div class="container-fluid">
 
 
-		<img id="logoSite" src="imgs/logo_transp.png">
-		<br>
+		<div class="row" >
+			<div class="container align-self-center d-flex justify-content-center"><!--DEIXAR NO CENTRO-->
+           		 <img class="img-responsive" src="imgs/logo_transp.png" alt="Imagem" id="logoSite" />
+       		</div>   
+		</div>
 
-		<p><a id="textoResultados">Exibindo resultados para "XXX"..</a></p>
 
-		<!--DIVS ABAIXO -->
+		<div class="row">
+			<div class="container align-self-center d-flex justify-content-center">	
+				<p><a id="textoResultados">Exibindo resultados para "XXX"..</a></p>
+			</div>	
+		</div>
 
-		<!--DIVFILTROS-->
-		<div id="divFiltro" class="container">
-			<li id="liFiltrocidade">	<!-- FILTRO CIDADE -->
-				<span>Localização:</span><br> 
-				<a id="afiltroFormiga" href="https://www.google.com/">Formiga</a>
+		<br><br><br><br>
 
-				<br>Divinópolis<br>Itapecerica<br>Samonte</li>________________________
-
+		<!--DIV DO MENU DE BUSCA-->
+		<div class="row">
+			<div class="col-sm-2" id="busca">
+				<b>Valor:</b>	
+				<a id="afiltro150a300" href="#"><br>De R$150,00 a R$300,00</a>
+				<br>De R$300,00 a R$500,00<br>De R$500,00 a R$800,00</ul> 
 				<br><br>
+					
 
-				<li id="liFiltropreco"> <!-- FILTRO CIDADE -->
-					<span>Valor:</span><br>
-					<a id="afiltro150a300" href="https:/www.youtube.com/">De R$150,00 a R$300,00</a>
-					<br>De R$300,00 a R$500,00<br>De R$500,00 a R$800,00<br></li> 
-
-				</div>
-
+				<b>Localizacao:</b>
+				<a id=afitlrodivi" href="#"><br>Divinópolis</a><br>Itapecerica<br>Samonte</ul>
+			
+			</div>	
 
 
-				<br><br><br>
 
 
-				<!--DIV001-->
-				<div id="divDoMeio" class="container">
-					<div class="row">
-						<div id="divAnuncio001" class="col-*-*">
 
-							<li id="liAnuncio001">
-								<div class="col-*-*">
-									<a id="aAnuncio001nome" href="resultadoclick.html">República Takalepau</a><br><!--O ID É ESTE PARA ALTERAR E VER SE MUDA O TEXTO-->
+
+
+
+			<div class="col-sm-3" id="anuncio"><!--DIV DO ANUNCIO, FOTO--></div>
+
+
+			<div class="col-sm-3" id="Atexto"><!--DIV DO TEXTO-->
+			<a id="aAnuncio001nome" href="resultadoclick.html"><u><b>República Takalepau</b></u></a><br><!--O ID É ESTE PARA ALTERAR E VER SE MUDA O TEXTO-->
 									<a id="aAnuncio001endereco">Endereço: </a><br>
 									<a id="aAnuncio001contato">Contato:</a><br><br>
-								</div>
-							</li>
+
+			</div>
 
 
-						</div>
+
+	</div>	<!-- DIV DO PRIMEIRO ROW-->
+
+
+
+
+
+
+
+
+	<div class="row"><!--DIV DO SEGUNDO ROW-- NIKOLLAS DUPLIQUE ESTE ROW (esta invi)-->
+			<div class="col-sm-2" id="busca1">
+				<b>Valor:</b>	
+				<a id="afiltro150a300" href="#"><br>De R$150,00 a R$300,00</a>
+				<br>De R$300,00 a R$500,00<br>De R$500,00 a R$800,00</ul> 
+				<br><br>
+					
+				<b>Localizacao:</b>
+				<a id=afitlrodivi" href="#"><br>Divinópolis</a><br>Itapecerica<br>Samonte</ul>
+			</div>	
+
+
+				<div class="col-sm-3" id="anuncio"><!--DIV DO ANUNCIO, FOTO--></div>
+
+
+					<div class="col-sm-3" id="Atexto"><!--DIV DO TEXTO-->
+					<a id="aAnuncio001nome" href="resultadoclick.html"><u><b>República Takalepau</b></u></a><br><!--O ID É ESTE PARA ALTERAR E VER SE MUDA O TEXTO-->
+									<a id="aAnuncio001endereco">Endereço: </a><br>
+									<a id="aAnuncio001contato">Contato:</a><br><br>
+
 					</div>
-				</div>
 
 
-				<!--DIV002-->
-				<div id="divDoMeio2" class="container">
-					<div class="row">
-						<div id="divAnuncio002" class="col-*-*">
+
+	</div>	<!-- FINAL DO SEGUNDO ROW-->
 
 
-							<li id="liAnuncio002">
-								<div class="col-*-*">
-									<a id="aAnuncio002nome" href="teste.com"> República Mandela</a> <br>
-									<a id="aAnuncio002endereco">Endereço:</a><br>
-									<a id="aAnuncio002contato">Contato:</a>
-								</div>
-							</li>
-						</div>
+				
 
 
-						<br><br><br><br><br><br><br><br><br>
-
-						<!--DIV003-->
-						<div id="divDoMeio3" class="container">
-							<div class="row">
-								<div id="divAnuncio003" class="col-*-*">
 
 
-									<li id="liAnuncio003">
-										<div class="col-*-*">
-											<a id="aAnuncio003nome" href="teste.com"> República Mandela</a> <br>
-											<a id="aAnuncio003endereco">Endereço:</a><br>
-											<a id="aAnuncio003contato">Contato:</a>
-										</div>
-									</li>
-								</div>
-
-	</center> 
+</div> <!--DIV DO FLUID-->
 </body>
 
-						<br><br><br><br>
 
 
 </html>
