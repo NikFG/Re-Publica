@@ -25,6 +25,7 @@ img#logoSite{
 	height: 200px;
 	overflow: auto;
 	border-radius:22px;
+	visibility: hidden;
 
 }
 
@@ -33,6 +34,7 @@ img#logoSite{
 	background: url('../imgs/anuncio001.png');
 	height: 350px;
 	border-radius:12px;
+
 }
 
 #embaixoAnuncio2{
