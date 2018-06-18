@@ -16,6 +16,10 @@
                 document.formCodigo.submit();
 
             }
+            function submitformFiltro0() {
+                document.getElementById("inputFiltro").value = document.getElementById("filtroBotao0").value;
+                document.formFiltro.submit();
+            }
             function submitformFiltro() {
                 document.getElementById("inputFiltro").value = document.getElementById("filtroBotao1").value;
                 document.formFiltro.submit();
@@ -36,7 +40,7 @@
     </head>
     <body>
     <center>
-        
+
 
         <img id="logoSite" src="imgs/logo_transp.png">
         <br>
@@ -50,7 +54,8 @@
         <form method="POST" name="formFiltro" action="resultadoFiltro.php">
             <div id="divFiltro" class="container">
                 <b>Valor:</b>	
-                <!-- <a id="afiltro150a300" href='javascript: submitformFiltro()'><br>De R$150,00 a R$300,00</a> -->
+                <!-- <a id="afiltro150a300" href='javascript: submitformFiltro()'><br>De R$150,00 a R$300,00</a> --><br>
+                <button type="button" id="filtroBotao0" class="btn btn-link" onclick="submitformFiltro0()" value="0">Abaixo de 150</button>
                 <button type="button" id="filtroBotao1" class="btn btn-link" onclick="submitformFiltro()" value="1">De R$150,00 a R$300,00</button>
                 <!--  <br>De R$300,00 a R$500,00<br>De R$500,00 a R$800,00</ul> -->
                 <button type="button" id="filtroBotao2" class="btn btn-link" onclick="submitformFiltro2()" value="2">De R$300,00 a R$500,00</button>
@@ -59,7 +64,7 @@
                 <input type="hidden" name="filtro" id="inputFiltro">
 
                 <b>Localizacao:</b><br>
-               <!-- <a id=afitlrodivi" href="#"><br>Divinópolis</a><br>Itapecerica<br>Samonte -->
+                <!-- <a id=afitlrodivi" href="#"><br>Divinópolis</a><br>Itapecerica<br>Samonte -->
                 <button type="button" id="filtroBotao1" class="btn btn-link" onclick="submitformFiltro()" value="1">Formiga</button>
 
 
@@ -68,6 +73,7 @@
 
         </form>
 
+
         <br><br><br>
         <form method="POST" action="resultadoclick.php" name="formCodigo">
             <?php
@@ -75,7 +81,53 @@
             $user = "root";
             $senha = "";
             $banco = "dbrepublica";
+            $cidade = $_POST["cidade"];
+            $sexo = $_POST["sexo"];
+            $preco = $_POST["preco"];
             $filtro = "";
+
+            switch ($cidade) {
+                case 1:
+
+                    break;
+            }
+
+            switch ($sexo) {
+                case 0:
+                    $filtro = $filtro . "and rep.sexo=0 ";
+                    break;
+                case 1:
+                    $filtro = $filtro . "and rep.sexo=1 ";
+                    break;
+                case 2:
+                    $filtro = $filtro . "and rep.sexo=2 ";
+                    break;
+            }
+
+            switch ($preco) {
+                case 1:
+                    $filtro = $filtro . "and rep.precoRepublica <= 100 ";
+                    break;
+                case 2:
+                    $filtro = $filtro . "and rep.precoRepublica between 101 and 200 ";
+                    break;
+                case 3:
+                    $filtro = $filtro . "and rep.precoRepublica between 201 and 300 ";
+                    break;
+                case 4:
+                    $filtro = $filtro . "and rep.precoRepublica between 301 and 400 ";
+                    break;
+                case 5:
+                    $filtro = $filtro . "and rep.precoRepublica between 401 and 500 ";
+                    break;
+                case 6:
+                    $filtro = $filtro . "and rep.precoRepublica between 501 and 600 ";
+                    break;
+                case 7:
+                    $filtro = $filtro . "and rep.precoRepublica > 600 ";
+                    break;
+            }
+            // echo $filtro;
             try {
                 $conn = new PDO("mysql:host=$servidor;dbname=$banco", $user, $senha);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

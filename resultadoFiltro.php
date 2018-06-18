@@ -15,7 +15,22 @@
                 document.formCodigo.submit();
 
             }
-
+            function submitformFiltro0() {
+                document.getElementById("inputFiltro").value = document.getElementById("filtroBotao0").value;
+                document.formFiltro.submit();
+            }
+            function submitformFiltro() {
+                document.getElementById("inputFiltro").value = document.getElementById("filtroBotao1").value;
+                document.formFiltro.submit();
+            }
+            function submitformFiltro2() {
+                document.getElementById("inputFiltro").value = document.getElementById("filtroBotao2").value;
+                document.formFiltro.submit();
+            }
+            function submitformFiltro3() {
+                document.getElementById("inputFiltro").value = document.getElementById("filtroBotao3").value;
+                document.formFiltro.submit();
+            }
         </script>
 
         <link rel="stylesheet" type="text/css" href="css/resultadolista.css">
@@ -33,29 +48,27 @@
 
         <!--DIVS ABAIXO -->
 
-        <!--DIVFILTROS-->
-        <div id="divFiltro" class="container">
-            <ul id="ulFiltrocidade">	<!-- FILTRO CIDADE -->
+        <form method="POST" name="formFiltro" action="resultadoFiltro.php">
+            <div id="divFiltro" class="container">
+                <b>Valor:</b>	
+                <!-- <a id="afiltro150a300" href='javascript: submitformFiltro()'><br>De R$150,00 a R$300,00</a> --><br>
+                <button type="button" id="filtroBotao0" class="btn btn-link" onclick="submitformFiltro0()" value="0">Abaixo de 150</button>
+                <button type="button" id="filtroBotao1" class="btn btn-link" onclick="submitformFiltro()" value="1">De R$150,00 a R$300,00</button>
+                <!--  <br>De R$300,00 a R$500,00<br>De R$500,00 a R$800,00</ul> -->
+                <button type="button" id="filtroBotao2" class="btn btn-link" onclick="submitformFiltro2()" value="2">De R$300,00 a R$500,00</button>
+                <button type="button" id="filtroBotao3" class="btn btn-link" onclick="submitformFiltro3()" value="3">Acima de R$500,00</button>
+                <br><br>
+                <input type="hidden" name="filtro" id="inputFiltro">
+
+                <b>Localizacao:</b><br>
+                <!-- <a id=afitlrodivi" href="#"><br>Divinópolis</a><br>Itapecerica<br>Samonte -->
+                <button type="button" id="filtroBotao1" class="btn btn-link" onclick="submitformFiltro()" value="1">Formiga</button>
 
 
-                <a href="#" class="btn btn-info btn-lg" id="afiltroFormiga"> <span class="glyphicon glyphicon-asterisk"></span>Localização</a><!--BOTAOZINHO AZUL DA LOCALIZAÇÃO-->
 
+            </div>
 
-                <a id=afitlrodivi" href="#"><br>Divinópolis</a><br>Itapecerica<br>Samonte</ul> ______________________
-
-            <br><br>
-
-
-            <ul id="ulFiltropreco"> <!-- FILTRO PREÇO -->
-
-                <a href="#" class="btn btn-info btn-lg" id="afiltroPreco"> <span class="glyphicon glyphicon-asterisk"></span>Valor</a>
-                <!--BOTAOZINHO AZUL DO PREÇO-->
-
-                <a id="afiltro150a300" href="#"><br>De R$150,00 a R$300,00</a>
-
-                <br>De R$300,00 a R$500,00<br>De R$500,00 a R$800,00<br></ul> 
-
-        </div>
+        </form>
 
 
 
@@ -68,10 +81,19 @@
             $senha = "";
             $banco = "dbrepublica";
             $filtro = "";
-            $aux = $_POST["filtro"];
-            switch ($aux) {
+            $preco = $_POST["filtro"];
+            switch ($preco) {
+                case 0:
+                    $filtro = "and rep.precoRepublica < 150";
+                    break;
                 case 1:
-                    $filtro = "and rep.precoRepublica between 150 and 300";
+                    $filtro = "and rep.precoRepublica between 150 and 300 ";
+                    break;
+                case 2:
+                    $filtro = "and rep.precoRepublica between 300 and 500 ";
+                    break;
+                case 3:
+                    $filtro = "and rep.precoRepublica > 500 ";
                     break;
             }
             try {
