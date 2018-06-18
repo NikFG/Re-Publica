@@ -1,0 +1,17 @@
+fonte padrão: MONTSERRAT {
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		font-family: 'Montserrat', sans-serif;
+}
+
+___________________________________________
+
+background padrão: {
+	NONE;
+}
+___________________________________________
+
+logo padrão: logo_transp.png{
+		width: 150px;
+}
+___________________________________________
+
