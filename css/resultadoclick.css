@@ -1,61 +1,86 @@
-/*BODY*/
-body{
-	background: url('../imgs/baner.jpg') no-repeat ;
-	height: 100%;
-	width: 100%;
-	font-family: optima;
-}
+	/*HTML*/
+	html{
+		width: 100%;
+		height: 100%;
+	}
 
-.row{
-	padding: 5px;
-}
-.container-fluid{
-	padding: 20px;
-}
-/*LOGO*/
-img#logoSite{
-	width: 200px;
-	height: 100px;
-}
 
-#busca{
-	border: black solid 3px;
-	background-color: white;
-	margin-right: 110px;
-	height: 200px;
-	overflow: auto;
-	border-radius:22px;
+	/*DEFINIÇÕES DO CORPO TODO*/
+	body{
+		background-color: #e6e6e6;
+		height: 100%;
+		width: 100%;
+		font-family: 'Montserrat', sans-serif;
+		word-wrap: break-word;
+	}
 
-}
+	/*ROW*/
+	.row{
+		padding: 5px;
 
-#anuncio{
-	border: black solid 2px;
-	background: url('../imgs/anuncio001.png');
-	height: 350px;
-	border-radius:12px;
-}
+	}
 
-#embaixoAnuncio2{
-	color: white;
-	background-color: red;
-	border: black solid 2px;
-	font-size: 20px;
-	border-radius: 22px;
+	/*CONTAINER DEFINIÇÕES*/
 
-}
+	.container-fluid{
+		padding: 20px;
+	}
+
+
+	/*LOGO*/
+	#logoSite{
+		width:  150px;
+		height: 100px;
+	}
 
 
 
-#embaixoAnuncio3{
-	color: black;
-	background-color: white;
-	border: black solid 2px;
-	font-size: 20px;
-	border-radius: 22px;
-	height: 100px;
-	overflow: auto;
+	/*DESCRIÇÃO EM BAIXO DA FOTO*/
+	#embaixoAnuncio3{
+		color: black;
+		font-size: 20px;
+		width: 35%;
+		font-size: 18px;
+		margin-left: auto;
 
-}
-#voltar{
-	color: white;
-}
+	}
+
+
+	/*TAMANHO DA FOTO DO CENTRO (A QUE ALTERA)*/
+	#rolagem{
+		height: 450px;
+		width: auto;
+		border-radius:4px;
+	}
+
+
+	/*TEXTO EM CIMA DA FOTO*/
+	#nomerepublica{
+		color: white;
+		font-size: 20px;
+		background-color: #347AB6;
+		margin-left: auto;
+
+	}
+
+
+	/*DIVI DA DESCRIÇÃO*/
+	#descricao{
+		width: 250px;
+		height: auto;
+		margin-right: 70px;
+		margin-left: 12px;
+		font-size: 18px;
+		
+	}
+
+
+	/*BOTOES DIREÇÕES*/
+	#botaoesquerda{
+		width: auto;
+		height: auto;
+	}
+	#botaodireita{
+		width: auto;
+		height: auto;
+	}

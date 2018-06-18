@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--HEAD COM SCRIPS E CSS-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><!--FONTE-->
 	<meta http-equiv="content-type" content="txt/html"; charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -15,16 +16,18 @@
 
 </head>
 <body>
+	<!--INICIO DO CONTAINER FLUID-->
+
 	<div class="container-fluid">
 		
-
+		<!--LOGO SITE-->
 			<div class="row" >
 				<div class="container align-self-center d-flex justify-content-center"><!--DEIXAR NO CENTRO-->
            		 <img class="img-responsive" src="imgs/logo_transp.png" alt="Imagem" id="logoSite" />
        			</div>   
 			</div>
 
-					<br><br><br><br>
+					<br><br><br>
 
 
 			<!--DIV EM CIMA DA FOTO-- (NOME DA REPUBLICA)-->
@@ -32,45 +35,144 @@
 				
 					<div class="container align-self-center d-flex justify-content-center">	
 				
-						<div class="col-sm-5" id="embaixoAnuncio2"><center><b>AAAABAA</b></center></div> 
+						<div class="col-sm-4" id="embaixoAnuncio2"><center>
+						<div class="well well-sm" id="nomerepublica"><b>Mandela</b></div>
+					</center></div> 
 					</div>
 					
 			
 			</div>
 
 
-			<br>
 
-
+			<!--DIVI DA DESCCRIÇÃO-->
 			<div class="row">
-				<div class="col-sm-2" id="descricao"><b>Descrição:</b></div><!--DIV DA DESCRIÇÃO-->
+			 
+					<div class="container" id="descricao"><!--DESCRICAO-->
+ 
+    					<div class="panel panel-primary">
+      						<div class="panel-heading">Descrição:
+      						</div>
+      							<div class="panel-body">3 Quartos..
+     
+    													 aaaaaaaaaaa
+													     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+													     aa
+													     aaaaaaaaa
+													     aaaa
+													     aaaaa
+													     aaaaaaaaaaaaa
+													     aaaaaaaaaaaaa
+													     aaaaaaaaaaaaa
 
-				<div class="col-sm-6" id="anuncio"><!--DIV DO ANUNCIO, FOTO--></div>
+													     aaaaaaaaaaaaa
+													     aaaa
+													     aaaaa
+   								 </div>
+					</div>
+   
+			</div>
 
-			
+
+
+
+
+	<div class="col-sm-7"><!--DIV DA ROLAGEM(FOTOS NO CENTRO)-->
+
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  
+				<!-- BOLINHA EM BAIXO DA ROLAGEM -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
+
+
+		  <!-- ONDE AS FOTOS RODAM -->
+
+		  <div class="carousel-inner" role="listbox" id="rolagem">
+		    <div class="item active">
+		    
+		     	<img src="imgs/anuncio001.png" class="img-thumbnail" alt="Primeira" >   <!-- FOTO 1 AQUI -->
+		      <div class="carousel-caption">
+		    	
+		        
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="imgs/anuncio002.png" class="img-thumbnail" alt="Segunda">    <!-- FOTO 2 AQUI -->
+		      <div class="carousel-caption">
+		       
+		      </div>
+		    </div>
+
+		    <div class="item">
+		      <img src="imgs/anuncio003.png" class="img-thumbnail" alt="Terceira">	   <!-- FOTO 3 AQUI -->
+		      <div class="carousel-caption">
+		 
+		      </div>
+		  </div>
+
+  		</div>
+
+
+
+		  <!--BOTAO DA ESQUERDA E DIREITA NA DIVI DAS FOTOS -->
+		  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" id="botaoesquerda">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Anterior</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" id="botaodireita">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Próxima</span>
+		  </a>
+		</div>
+
+
+
+
+	</div> <!-- Fim da rolagem -->
+
+
 			</div><!--FIM DO PRIMEIRO ROW-->
 
 
 			
 
 
+
 			<!--DIV EM BAIXO DA FOTO-- (INFORMAÇÕES)-->
 
 
-				<div class="row" id="embaixoAnuncio">
-				
-					<div class="container align-self-center d-flex justify-content-center">	
-				
-						<div class="col-sm-5" id="embaixoAnuncio3">Contato:<br>Quantidade de Quartos:<br>Valor Aproximado:</div> 
+				<div class="row">
+			 
+					<div class="container" id="embaixoAnuncio3"><!--INFORMAÇÕES-->
+ 
+    					<div class="panel panel-primary">
+      						<div class="panel-heading">Informações:
+      						</div>
+      							<div class="panel-body">3 Quartos..
+     					
+    													 	aaa
+    													 <br>bbb
+    													 <br>ccc
+   								 </div>
+						</div>
+   
 					</div>
-					
-				</div>	
+				</div>
 			
+				<br>
 
 
-
-
-				<a id="voltar" href="resultadolista.php"><center>VOLTAR</center></a>
+		
+				<a id="voltar" href="resultadolista.php"><!--BOTAO VOLTAR-->	
+				<center>
+					<button type="button" class="btn btn-primary">Voltar</button>
+				</center>
+				</a>
 	</div>	<!--FIM DO FLUID-->
 
 

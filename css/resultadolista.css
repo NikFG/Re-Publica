@@ -1,16 +1,17 @@
 /*BODY*/
 body{
-	background: url('../imgs/baner.jpg') no-repeat ;
+	/*SEM BACKGROUND*/
+	background-color: #e6e6e6;
 	height: 100%;
 	width: 100%;
+	font-family: 'Montserrat', sans-serif;
 }
 
 
 /*LOGO*/
 img#logoSite{
 
-	width: 200px;
-	height: 100px;
+	width: 150px;
 }
 
 
@@ -35,13 +36,13 @@ div#divFiltro {
 
 
 div#divFiltro ul#ulFiltrocidade a#afiltroFormiga { /*FILTRO DE FORMIGA ID*/
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	width: 130px;
 	
 }
 div#divFiltro ul#ulFiltropreco a#afiltroPreco { /*FILTRO DE 150 A 300 ID*/
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 
 } 
@@ -52,7 +53,7 @@ div#divFiltro ul#ulFiltropreco a#afiltroPreco { /*FILTRO DE 150 A 300 ID*/
 div#divAnuncio001 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
 	margin: auto;
 	border: 2px solid black; 
-	 border-radius:12px;
+	border-radius:12px;
 	height: 180px;
 	background: url('../imgs/anuncio001.png');
 	background-size: 384px 200px;
@@ -64,7 +65,7 @@ div#divAnuncio001 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO V
 div#divAnuncio001 ul#ulAnuncio001 {
 	font-size: 10px;
 	background-color: white;
-	 border-radius:12px;
+	border-radius:12px;
 	float: right;
 	width: 50%;
 	height: 100%;
@@ -75,18 +76,18 @@ div#divAnuncio001 ul#ulAnuncio001 {
 
 
 div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001nome { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
 
 div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001endereco { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
 div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001contato { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
@@ -101,7 +102,7 @@ div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001contato {
 div#divAnuncio002 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
 	margin: auto;
 	border: 2px solid black; 
-	 border-radius:12px;
+	border-radius:12px;
 	height: 180px;
 	background: url('../imgs/anuncio002.png');
 	background-size: 384px 200px;
@@ -123,18 +124,18 @@ div#divAnuncio002 ul#ulAnuncio002 {
 
 
 div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002nome { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
 
 div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002endereco { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
 div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002contato { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
@@ -146,7 +147,7 @@ div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002contato {
 div#divAnuncio003 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
 	margin: auto;
 	border: 2px solid black; 
-	 border-radius:12px;
+	border-radius:12px;
 	height: 180px;
 	background: url('../imgs/anuncio003.png');
 	background-size: 384px 200px;
@@ -168,18 +169,18 @@ div#divAnuncio003 ul#ulAnuncio003 {
 
 
 div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003nome { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
 
 div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003endereco { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
 div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003contato { 
-	font-family: optima;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
 }
