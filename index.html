@@ -1,55 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Re-Publica</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<body>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<h5><a href="cadastro.html" name="cadastro">Cadastro</a> | <a href="login.html" name="entrar">Entrar</a><br>
-	<a href="anunciar.html" name="anunciar">Anuncie</a></h5>
-	<center>
-	<form>
-	<img src="img/logo_transp.png">
-	<p>Já pensouu em descolar uma república para morar pela <u>internet</u>? Sejam bem-vindos<br>
-	à mais nova <strong>plataforma</strong> para divulgação e locação de quartos da internet. Aqui<br>
-	você tem vários filtros para encontrar exatamente o que você procura.</p>
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-	<p>______________________________________________________________</p>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-	
-		<p> Qual cidade você deseja?<br></p>
-		<p><select>
-				<option>*   Selecione a cidade   *</option>
-				<option>Formiga</option>
-				<option>Divinópolis</option>
-				<option>Arcos</option>
-			</select></p>
-		<p>Qual a margem de preço desejada?<br></p>
-		<p><select>
-				<option>* Selecione o valor  *</option>
-				<option>R$00,00 - R$100,00</option>
-				<option>R$100,01 - R$200,00</option>
-				<option>R$200,01 - R$300,00</option>
-				<option>R$300,01 - R$400,00</option>
-				<option>R$400,01 - R$500,00</option>
-				<option>R$500,01 - R$1000,00</option>
-				<option>R$1000,00 - ...</option>
-		</select></p>
-		<p>Para qual usuário será o quarto?<br></p>
-		<p><input type="radio" name="sexo">Masculino
-		<input type="radio" name="sexo">Feminino
-		<input type="radio" name="sexo">Ambos</p>
+    <title>Re-Publica - Seu site de república</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row menu">
+        <div class="col-sm-12">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="cadastro.html">Cadastre-se</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Entrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="anunciar.html">Anuncie conosco</a>
+              </li>
+            </ul>
+        </div>    
+      </div>
 
-		<p>
-		<input type="reset" name="limpar" value="Limpar">&nbsp;&nbsp;&nbsp;
-		 <button type="button" class="btn btn-default">
-  	 		 <span class="glyphicon glyphicon-search"></span> <a href="resultadolista.html">Pesquisar</a>
- 		</button>
-	</form>
-</center>
-</body>
+      <div class="row cabecalho">
+        <div id="logo">
+            <img src="img/logo_transp.png" name="re-publica">
+        </div>
+        
+      </div>
+    
+      <div class="row descricao">
+        <div id="descricao">
+          <p>Já pensou em descolar uma <em>república para morar</em>, pela internet? Seja bem-vindo
+          à mais nova plataforma para divulgação e locação de quartos. Aqui
+          você tem vários filtros para encontrar exatamente o que você procura. Junte-se à nós!</p>
+        </div>
+      </div>
+
+      <div class="row formulario-busca">
+        <div id="busca-inicial">
+          <form>
+            <label>
+              <p>Qual cidade você deseja?</p>
+              <select>
+                <option>*Selecione a cidade*</option>
+                <option>Formiga</option>
+                <option>Arcos</option>
+                <option>Divinópolis</option>
+                <option>Córrego Fundo</option>
+              </select>
+            </label><br>
+            <label>
+              <p>Qual a margem de preço desejada?</p>
+              <select>
+                <option>*Selecione o valor*</option>
+                <option>R$000,00 à R$100,00</option>
+                <option>R$101,00 à R$200,00</option>
+                <option>R$201,00 à R$300,00</option>
+                <option>R$301,00 à R$400,00</option>
+                <option>R$401,00 à R$500,00</option>
+                <option>R$501,00 à R$600,00</option>
+                <option>R$601,00 à ...</option>
+              </select>
+            </label><br>
+            <label>
+              <p>Para qual gênero será o quarto?</p>
+              <input type="radio" name="sexo">Masculino
+              <input type="radio" name="sexo">Feminino
+              <input type="radio" name="sexo">Ambos
+            </label><br>
+
+            <button type="reset" class="btn btn-outline-secondary">Limpar</button> 
+            <button type="submit" class="btn btn-outline-info">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div id="footer">
+        <p>© Copyright 2018 - Re-Publica</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
 </html>
