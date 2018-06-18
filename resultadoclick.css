@@ -1,0 +1,67 @@
+/*BODY*/
+body{
+	background-color: #e6e6e6;
+	height: 100%;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.row{
+	padding: 5px;
+
+}
+.container-fluid{
+	padding: 20px;
+}
+/*LOGO*/
+#logoSite{
+	width:  150px;
+	height: 100px;
+
+
+}
+
+
+#anuncio{
+	border: black solid 2px;
+	background: url('../imgs/anuncio001.png');
+	height: 350px;
+	border-radius:12px;
+}
+
+#embaixoAnuncio2{
+	color: white;
+	background-color: red;
+	border: black solid 2px;
+	font-size: 20px;
+	border-radius: 22px;
+
+}
+
+
+
+#embaixoAnuncio3{
+	color: black;
+	background-color: white;
+	border: black solid 2px;
+	font-size: 20px;
+	border-radius: 22px;
+	height: 100px;
+	overflow: auto;
+
+}
+#voltar{
+	color: white;
+}
+
+#descricao{
+	border: black solid 3px;
+	background-color: white;
+	margin-right: 110px;
+	height: 270px;
+	overflow: auto;
+	border-radius:22px;
+	margin-left: 12px;
+
+
+}
