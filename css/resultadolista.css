@@ -4,7 +4,9 @@ body{
 	background-color: #e6e6e6;
 	height: 100%;
 	width: 100%;
+	word-wrap: break-word;
 	font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -28,9 +30,11 @@ div#divFiltro {
 
 	background-color: white;
 	float: left;
-	border: 1px solid black; 
-	 border-radius:12px;
-	width: 200px;
+	border: 3px solid black; 
+	border-radius:12px;
+	width: 220px;
+
+	margin-left: 10px;
 	
 }
 
@@ -183,4 +187,17 @@ div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003contato {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	color: black;
+}
+
+#descricao{
+	width: 100px;
+	float: left;
+}
+
+
+
+.footer{ /*{ BOTAO DE VOLTAR*/
+    position:absolute;
+    bottom:0;
+    width:100%;
 }

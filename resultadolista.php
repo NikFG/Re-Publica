@@ -50,10 +50,11 @@
 
         <!--DIVS ABAIXO -->
 
-        <!--DIVFILTROS-->
+        <!--DIVS ABAIXO -->
+        <br>
         <form method="POST" name="formFiltro" action="resultadoFiltro.php">
             <div id="divFiltro" class="container">
-                <b>Valor:</b>	
+                <b>Valor:</b>   
                 <!-- <a id="afiltro150a300" href='javascript: submitformFiltro()'><br>De R$150,00 a R$300,00</a> --><br>
                 <button type="button" id="filtroBotao0" class="btn btn-link" onclick="submitformFiltro0()" value="0">Abaixo de 150</button>
                 <button type="button" id="filtroBotao1" class="btn btn-link" onclick="submitformFiltro()" value="1">De R$150,00 a R$300,00</button>
@@ -70,6 +71,7 @@
 
 
             </div>
+
 
         </form>
 
@@ -202,6 +204,14 @@
 
 
 </center> 
+        <div class="footer">
+         <a id="voltar" href="index.html"><!--BOTAO VOLTAR-->    
+                <center>
+                    <button type="button" class="btn btn-primary">Voltar</button>
+                </center>
+                </a>
+    </div>
+               
 </body>
 
 <br><br><br><br>
