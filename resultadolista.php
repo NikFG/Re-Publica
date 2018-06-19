@@ -141,14 +141,23 @@
                 //SQL SELECT
                 $sql = "SELECT rep.nomeRepublica, logr.nomeLogradouro, "
                         . "rep.zipzaporungaRepublica, p.nome, rep.numeroRepublica, "
-                        . "rep.precoRepublica, b.nomeBairro, mun.nomeMunicipio, rep.idRepublica "
-                        . "FROM tbrepublica rep, logradouro logr, tbpessoa p, bairro b,"
+                        . "rep.precoRepublica, b.nomeBairro, mun.nomeMunicipio, rep.idRepublica, img.imagemRepublica "
+                        . "FROM tbrepublica rep, logradouro logr, tbpessoa p, bairro b, tbimagemrepublica img,"
                         . " municipio mun WHERE rep.idPessoa = p.idTbPessoa and"
                         . " logr.idLogradouro = rep.Logradouro_idLogradouro and "
-                        . "b.idBairro = logr.Bairro_idBairro and b.Municipio_idMunicipio = mun.idMunicipio " . $filtro;
+                        . "b.idBairro = logr.Bairro_idBairro and b.Municipio_idMunicipio = mun.idMunicipio and "
+                        . "img.TbRepublica_idRepublica = rep.idRepublica " . $filtro;
                 $stmt = $conn->prepare($sql);
                 $stmt->execute();
+                /*  $sql2 = "SELECT * FROM tbimagemrepublica";
+                  $stmt2 = $conn->prepare($sql2);
+                  $stmt2->execute();
 
+                  //SOMENTE PRO SELECT
+                  ASSIM SE INSERE UMA IMAGEM BIIRL
+                  while ($row = $stmt2->fetch()) {
+                  echo"<img src='data:image/jpeg;base64," . base64_encode($row[8]) . "'/>";
+                  } */
                 //SOMENTE PRO SELECT
                 $result = $stmt->setFetchMode(PDO::FETCH_NUM);
                 while ($row = $stmt->fetch()) {
@@ -156,7 +165,7 @@
                     echo"<div id='divDoMeio' class='container'>
             <div class='row'>
                 <div id='divAnuncio001' class='col-*-*'>
-
+                <img src='data:image/jpeg;base64," . base64_encode($row[9]) . "'  height='175' width='425.3' id='imagens'/>
                     <ul id='ulAnuncio001'>
                         <div class='col-*-*'>
                         
@@ -179,23 +188,6 @@
                 $conn = null;
             }
             ?>
-            <!--DIV001
-            <div id="divDoMeio" class="container">
-                <div class="row">
-                    <div id="divAnuncio001" class="col-*-*">
-    
-                        <ul id="ulAnuncio001">
-                            <div class="col-*-*">
-                                <a id="aAnuncio001nome" href="resultadoclick.html"><u><b>República Takalepau</b></u></a><br><!--O ID É ESTE PARA ALTERAR E VER SE MUDA O TEXTO
-                                <a id="aAnuncio001endereco">Endereço: </a><br>
-                                <a id="aAnuncio001contato">Contato:</a><br><br>
-                            </div>
-                        </ul>
-    
-    
-                    </div>
-                </div>
-            </div>-->
             <input type="hidden"  name="codigo" id="codigo">
         </form>
     </div>
@@ -204,14 +196,14 @@
 
 
 </center> 
-        <div class="footer">
-         <a id="voltar" href="index.html"><!--BOTAO VOLTAR-->    
-                <center>
-                    <button type="button" class="btn btn-primary">Voltar</button>
-                </center>
-                </a>
-    </div>
-               
+<div class="footer">
+    <a id="voltar" href="index.html"><!--BOTAO VOLTAR-->    
+        <center>
+            <button type="button" class="btn btn-primary">Voltar</button>
+        </center>
+    </a>
+</div>
+
 </body>
 
 <br><br><br><br>

@@ -107,11 +107,12 @@
                 //SQL SELECT
                 $sql = "SELECT rep.nomeRepublica, logr.nomeLogradouro, "
                         . "rep.zipzaporungaRepublica, p.nome, rep.numeroRepublica, "
-                        . "rep.precoRepublica, b.nomeBairro, mun.nomeMunicipio, rep.idRepublica "
+                        . "rep.precoRepublica, b.nomeBairro, mun.nomeMunicipio, rep.idRepublica, img.imagemRepublica "
                         . "FROM tbrepublica rep, logradouro logr, tbpessoa p, bairro b,"
-                        . " municipio mun WHERE rep.idPessoa = p.idTbPessoa and"
+                        . " municipio mun, tbimagemrepublica img WHERE rep.idPessoa = p.idTbPessoa and"
                         . " logr.idLogradouro = rep.Logradouro_idLogradouro and "
-                        . "b.idBairro = logr.Bairro_idBairro and b.Municipio_idMunicipio = mun.idMunicipio " . $filtro;
+                        . "b.idBairro = logr.Bairro_idBairro and b.Municipio_idMunicipio = mun.idMunicipio "
+                        . "and img.TbRepublica_idRepublica = rep.idRepublica " . $filtro;
                 $stmt = $conn->prepare($sql);
                 $stmt->execute();
 
@@ -122,7 +123,7 @@
                     echo"<div id='divDoMeio' class='container'>
             <div class='row'>
                 <div id='divAnuncio001' class='col-*-*'>
-
+                    <img src='data:image/jpeg;base64," . base64_encode($row[9]) . "'  height='175' width='425.3' id='imagens'/>
                     <ul id='ulAnuncio001'>
                         <div class='col-*-*'>
                         

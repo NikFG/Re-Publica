@@ -1,11 +1,11 @@
 /*BODY*/
 body{
-	/*SEM BACKGROUND*/
-	background-color: #e6e6e6;
-	height: 100%;
-	width: 100%;
-	word-wrap: break-word;
-	font-family: 'Montserrat', sans-serif;
+    /*SEM BACKGROUND*/
+    background-color: #e6e6e6;
+    height: 100%;
+    width: 100%;
+    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -13,14 +13,14 @@ body{
 /*LOGO*/
 img#logoSite{
 
-	width: 150px;
+    width: 150px;
 }
 
 
 a#textoResultados{  /*EXBINDO RESULTADOS PARA XXX */
-	font-family: optima;
-	font-size: 23px;
-	color: white;
+    font-family: optima;
+    font-size: 23px;
+    color: white;
 }
 
 /*DIVFILTRO*/
@@ -28,26 +28,26 @@ a#textoResultados{  /*EXBINDO RESULTADOS PARA XXX */
 
 div#divFiltro {
 
-	background-color: white;
-	float: left;
-	border: 3px solid black; 
-	border-radius:12px;
-	width: 220px;
+    background-color: white;
+    float: left;
+    border: 3px solid black; 
+    border-radius:12px;
+    width: 220px;
 
-	margin-left: 10px;
-	
+    margin-left: 10px;
+
 }
 
 
 div#divFiltro ul#ulFiltrocidade a#afiltroFormiga { /*FILTRO DE FORMIGA ID*/
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	width: 130px;
-	
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 130px;
+
 }
 div#divFiltro ul#ulFiltropreco a#afiltroPreco { /*FILTRO DE 150 A 300 ID*/
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 
 } 
 
@@ -55,24 +55,27 @@ div#divFiltro ul#ulFiltropreco a#afiltroPreco { /*FILTRO DE 150 A 300 ID*/
 /*DIV001*/
 
 div#divAnuncio001 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
-	margin: auto;
-	border: 2px solid black; 
-	border-radius:12px;
-	height: 180px;
-	background: url('../imgs/anuncio001.png');
-	background-size: 384px 200px;
-	width: 75%;
+    margin: auto;
+    border: 2px solid black; 
+    border-radius:12px;
+    height: 180px;
+
+    width: 75%;
+}
+
+#imagens{
+    border: 3px solid black; 
+    border-radius:12px;
 }
 
 
-
 div#divAnuncio001 ul#ulAnuncio001 {
-	font-size: 10px;
-	background-color: white;
-	border-radius:12px;
-	float: right;
-	width: 50%;
-	height: 100%;
+    font-size: 10px;
+    background-color: white;
+    border-radius:12px;
+    float: right;
+    width: 50%;
+    height: 100%;
 
 }
 
@@ -80,20 +83,20 @@ div#divAnuncio001 ul#ulAnuncio001 {
 
 
 div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001nome { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 
 div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001endereco { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001contato { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 
 
@@ -104,23 +107,23 @@ div#divAnuncio001 ul#ulAnuncio001 a#aAnuncio001contato {
 
 
 div#divAnuncio002 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
-	margin: auto;
-	border: 2px solid black; 
-	border-radius:12px;
-	height: 180px;
-	background: url('../imgs/anuncio002.png');
-	background-size: 384px 200px;
-	width: 75%;
+    margin: auto;
+    border: 2px solid black; 
+    border-radius:12px;
+    height: 180px;
+    background: url('../imgs/anuncio002.png');
+    background-size: 384px 200px;
+    width: 75%;
 }
 
 
 
 div#divAnuncio002 ul#ulAnuncio002 {
-	font-size: 10px;
-	background-color: white;
-	float: right;
-	width: 50%;
-	height: 100%;
+    font-size: 10px;
+    background-color: white;
+    float: right;
+    width: 50%;
+    height: 100%;
 
 }
 
@@ -128,20 +131,20 @@ div#divAnuncio002 ul#ulAnuncio002 {
 
 
 div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002nome { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 
 div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002endereco { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002contato { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 
 
@@ -149,23 +152,23 @@ div#divAnuncio002 ul#ulAnuncio002 a#aAnuncio002contato {
 /*DIV003*/
 
 div#divAnuncio003 { /*ESTE É O DIVI ONDE SERÁ ALTERADA A FOTO, SÓ MECHER NO VALOR DO BACKGROUND URL*/
-	margin: auto;
-	border: 2px solid black; 
-	border-radius:12px;
-	height: 180px;
-	background: url('../imgs/anuncio003.png');
-	background-size: 384px 200px;
-	width: 75%;
+    margin: auto;
+    border: 2px solid black; 
+    border-radius:12px;
+    height: 180px;
+    background: url('../imgs/anuncio003.png');
+    background-size: 384px 200px;
+    width: 75%;
 }
 
 
 
 div#divAnuncio003 ul#ulAnuncio003 {
-	font-size: 10px;
-	background-color: white;
-	float: right;
-	width: 50%;
-	height: 100%;
+    font-size: 10px;
+    background-color: white;
+    float: right;
+    width: 50%;
+    height: 100%;
 
 }
 
@@ -173,25 +176,25 @@ div#divAnuncio003 ul#ulAnuncio003 {
 
 
 div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003nome { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 
 div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003endereco { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 div#divAnuncio003 ul#ulAnuncio003 a#aAnuncio003contato { 
-	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
-	color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
 }
 
 #descricao{
-	width: 100px;
-	float: left;
+    width: 100px;
+    float: left;
 }
 
 
