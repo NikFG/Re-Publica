@@ -112,7 +112,7 @@
                         . " municipio mun, tbimagemrepublica img WHERE rep.idPessoa = p.idTbPessoa and"
                         . " logr.idLogradouro = rep.Logradouro_idLogradouro and "
                         . "b.idBairro = logr.Bairro_idBairro and b.Municipio_idMunicipio = mun.idMunicipio "
-                        . "and img.TbRepublica_idRepublica = rep.idRepublica " . $filtro;
+                        . "and img.TbRepublica_idRepublica = rep.idRepublica and img.imagemPrincipal = 1 " . $filtro;
                 $stmt = $conn->prepare($sql);
                 $stmt->execute();
 

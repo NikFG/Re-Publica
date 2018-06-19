@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/resultadoLista.js"></script>
+        
         <script type="text/javascript">
             var a;
             function submitform(a) {
@@ -146,7 +146,7 @@
                         . " municipio mun WHERE rep.idPessoa = p.idTbPessoa and"
                         . " logr.idLogradouro = rep.Logradouro_idLogradouro and "
                         . "b.idBairro = logr.Bairro_idBairro and b.Municipio_idMunicipio = mun.idMunicipio and "
-                        . "img.TbRepublica_idRepublica = rep.idRepublica " . $filtro;
+                        . "img.TbRepublica_idRepublica = rep.idRepublica and img.imagemPrincipal = 1 " . $filtro;
                 $stmt = $conn->prepare($sql);
                 $stmt->execute();
                 /*  $sql2 = "SELECT * FROM tbimagemrepublica";

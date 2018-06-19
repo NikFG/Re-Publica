@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 18-Jun-2018 às 16:56
+-- Generation Time: 19-Jun-2018 às 19:23
 -- Versão do servidor: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -108,12 +108,13 @@ CREATE TABLE IF NOT EXISTS `municipio` (
 DROP TABLE IF EXISTS `tbimagemrepublica`;
 CREATE TABLE IF NOT EXISTS `tbimagemrepublica` (
   `idTbImagemRepublica` int(11) NOT NULL AUTO_INCREMENT,
-  `imagemRepublica` blob NOT NULL,
-  `TbRepublica_idRepublica` int(11) NOT NULL,
+  `imagemRepublica` longblob NOT NULL,
+  `TbRepublica_idRepublica` int(11) NOT NULL DEFAULT '0',
   `Descricao` text NOT NULL,
+  `imagemPrincipal` tinyint(2) NOT NULL,
   PRIMARY KEY (`idTbImagemRepublica`),
   KEY `fk_TbImagemRepublica_TbRepublica1_idx` (`TbRepublica_idRepublica`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
