@@ -16,6 +16,7 @@
 
 	/*ROW*/
 	.row{
+		
 		padding: 5px;
 
 	}
@@ -51,6 +52,7 @@
 		height: 450px;
 		width: auto;
 		border-radius:4px;
+
 	}
 
 
@@ -83,4 +85,9 @@
 	#botaodireita{
 		width: auto;
 		height: auto;
+	}
+
+	#foto{
+		height: 450px;
+		width: 800px;
 	}

@@ -116,7 +116,7 @@
                     <div class='carousel-inner' role='listbox' id='rolagem'>
                         <div class='item active'>
                             <!-- Foto 1 aqui -->
-                           <img src='data:image/jpeg;base64," . base64_encode($imagem[0]) . "' class='img-thumbnail' alt='Primeira' > 
+                           <img  id='foto' src='data:image/jpeg;base64," . base64_encode($imagem[0]) . "' class='img-thumbnail' alt='Primeira' > 
                             <div class='carousel-caption'>
 
 
@@ -125,7 +125,7 @@
 
                         <div class='item'>
                          <!-- FOTO 2 AQUI -->
-                     <img src='data:image/jpeg;base64," . base64_encode($imagem[1]) . "' class='img-thumbnail' alt='Segunda'>    
+                     <img id='foto' src='data:image/jpeg;base64," . base64_encode($imagem[1]) . "' class='img-thumbnail' alt='Segunda'>    
                             <div class='carousel-caption'>
 
                             </div>
@@ -133,7 +133,7 @@
 
                         <div class='item'>
                          <!-- FOTO 3 AQUI -->
-                       <img src='data:image/jpeg;base64," . base64_encode($imagem[2]) . "'class='img-thumbnail' alt='Terceira'>	  
+                       <img id='foto' src='data:image/jpeg;base64," . base64_encode($imagem[2]) . "'class='img-thumbnail' alt='Terceira'>	  
                             <div class='carousel-caption'>
 
                             </div>

@@ -165,7 +165,7 @@
                     echo"<div id='divDoMeio' class='container'>
             <div class='row'>
                 <div id='divAnuncio001' class='col-*-*'>
-                <img src='data:image/jpeg;base64," . base64_encode($row[9]) . "'  height='175' width='425.3' id='imagens'/>
+                <img src='data:image/jpeg;base64," . base64_encode($row[9]) . "'  id='imagens'/>
                     <ul id='ulAnuncio001'>
                         <div class='col-*-*'>
                         
