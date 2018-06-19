@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <link rel="stylesheet" type="text/css" href="css/anunciar.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="
+    sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
@@ -22,7 +24,20 @@ $(document).ready(function(e) {
 	<title>Anunciar</title>
 </head>
 <body bgcolor="#d1e0e0" >
-<div class="container">
+        <div class="container-fluid">
+            <div class="row menu">
+                <div class="col-sm-12">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Sair</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <center>
@@ -32,7 +47,7 @@ $(document).ready(function(e) {
       </div>
       <div class="row conteudo">
         <div class="col-sm-12">
-        <form>
+        <form id="conteudo">
 
           <h1 id="titulo">Cadastre sua Republica</h1>
         
@@ -77,22 +92,29 @@ $(document).ready(function(e) {
 				<option>Dois ou mais</option>
 			</select>
 		</div>
+
+    <div class="form-group">
+    <label for="exampleInputFile">Inserir Imagem Principal:</label>
+    <input type="file" id="upload" name="upload" class="btn-outline-secondary"  accept="image/png, image/jpeg"  multiple />
+    <p class="help-block">Imagem que ficara na capa do anuncio (Somente arquivos .png e .jpeg). </p>
+  </div>
 		 <div class="form-group">
-    <label for="exampleInputFile">Inserir Imagens</label>
-    <input type="file" id="upload" name="upload" class="btn btn-success"  accept="image/png, image/jpeg"  multiple />
+    <label for="exampleInputFile">Demais Imagens:</label>
+    <input type="file" id="upload" name="upload" class="btn-outline-secondary"  accept="image/png, image/jpeg"  multiple />
     <p class="help-block">Somente arquivos (.png) e (.jpeg). </p>
   </div>
         <br>
        
        <center>
-		    <button class="btn btn-primary btn-md" type="submit">Concluir</button> 
 
-        <button class="btn btn-default btn-md" type="reset">Limpar</button></center>
+        <button class="btn btn-outline-secondary btn-md" type="reset">Limpar</button>
 
-
+		    <button onclick="" class="btn btn-outline-primary btn-md" type="submit">Concluir</button><br><br><br>
+      </center>
+    </form>
+  </div>
 </div>
-</form>
-
-	
+</div>
+</div>
   </body>
 </html>

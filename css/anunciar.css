@@ -1,6 +1,7 @@
 /*Imagem do título*/
 #img-logo{
-	width: 220px;
+	width: 150px;
+	display:block;
 }
 
 /*Layout geral*/
@@ -12,7 +13,7 @@
 #titulo{
 	font-size: 25px;
 	margin-bottom: 20px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*Layout da classe conteúdo*/
@@ -20,12 +21,18 @@
 	margin-top: 30px;
 	border-top: 1px solid rgba(190,190,190,0.5);
 	padding-top: 15px;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 /*Layout do form*/
 form{
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	margin: auto;
+	width: 800px;
+
+
 }
 
 form input{
@@ -36,4 +43,22 @@ form input{
 body{
 	background-color: #e0ebeb;
  
+}
+
+.menu ul{
+    margin-right: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+
+.menu ul li a{
+	color: black;
+}
+.menu ul li a:hover{
+	color: white;
+	background-color: #6c757d;
+	background-size: 10px;
+	border: 1px solid #6c757d;
+	border-radius: 5px; 
 }
