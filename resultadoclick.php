@@ -157,9 +157,9 @@
         </div><!--FIM DO PRIMEIRO ROW-->";
                 // <!--DIV EM BAIXO DA FOTO-- (INFORMAÇÕES)-->
                 setlocale(LC_MONETARY, 'pt_BR');
-             
-              
-               
+
+
+
 
                 $fmt = new NumberFormatter('en_US', NumberFormatter::CURRENCY);
                 $fmt->setTextAttribute(NumberFormatter::CURRENCY_CODE, 'R$');

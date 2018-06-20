@@ -26,7 +26,7 @@
       <div class="row conteudo"> <!-- Conteúdo -->
         <div class="col-sm-12">
         <center>
-        <form>
+            <form method="post" action="cadastrar.php">
           <h3 id="titulo">Cadastre-se</h3>
           <label>Nome completo: <input type="text" name="nome" required placeholder="ex.Fulano Ciclano da Silva"></label><br>
           <label>Email: <input type="email" name="email" placeholder="ex.fulano@mail.com.br" required></label><br>
@@ -38,6 +38,13 @@
         </center>
         </div>
       </div>  <!-- Fim do conteúdo -->
+      <?php
+      
+      
+      
+      
+      ?>
+      
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
