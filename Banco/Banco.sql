@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 19-Jun-2018 às 19:23
+-- Generation Time: 21-Jun-2018 às 14:17
 -- Versão do servidor: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `bairro` (
   `Municipio_idMunicipio` int(11) NOT NULL,
   PRIMARY KEY (`idBairro`),
   KEY `fk_Bairro_Municipio1_idx` (`Municipio_idMunicipio`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -77,12 +77,11 @@ CREATE TABLE IF NOT EXISTS `bairro` (
 DROP TABLE IF EXISTS `logradouro`;
 CREATE TABLE IF NOT EXISTS `logradouro` (
   `idLogradouro` int(11) NOT NULL AUTO_INCREMENT,
-  `tipoLogradouro` varchar(45) NOT NULL,
   `nomeLogradouro` varchar(45) NOT NULL,
   `Bairro_idBairro` int(11) NOT NULL,
   PRIMARY KEY (`idLogradouro`),
   KEY `fk_Logradouro_Bairro1_idx` (`Bairro_idBairro`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -110,11 +109,10 @@ CREATE TABLE IF NOT EXISTS `tbimagemrepublica` (
   `idTbImagemRepublica` int(11) NOT NULL AUTO_INCREMENT,
   `imagemRepublica` longblob NOT NULL,
   `TbRepublica_idRepublica` int(11) NOT NULL DEFAULT '0',
-  `Descricao` text NOT NULL,
   `imagemPrincipal` tinyint(2) NOT NULL,
   PRIMARY KEY (`idTbImagemRepublica`),
   KEY `fk_TbImagemRepublica_TbRepublica1_idx` (`TbRepublica_idRepublica`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -127,12 +125,12 @@ CREATE TABLE IF NOT EXISTS `tbpessoa` (
   `idTbPessoa` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) NOT NULL,
   `senha` varchar(20) NOT NULL,
-  `cpf` char(11) NOT NULL,
-  `rg` char(11) NOT NULL,
+  `cpf` varchar(30) NOT NULL,
+  `email` varchar(60) NOT NULL,
   PRIMARY KEY (`idTbPessoa`),
   UNIQUE KEY `cpf_UNIQUE` (`cpf`),
-  UNIQUE KEY `rg_UNIQUE` (`rg`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  UNIQUE KEY `rg_UNIQUE` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -145,18 +143,17 @@ CREATE TABLE IF NOT EXISTS `tbrepublica` (
   `idRepublica` int(11) NOT NULL AUTO_INCREMENT,
   `nomeRepublica` varchar(45) NOT NULL,
   `numeroRepublica` varchar(5) NOT NULL,
-  `cep` int(8) NOT NULL,
   `numQuartosRepublica` int(11) NOT NULL,
   `descricaoRepublica` longtext NOT NULL,
   `precoRepublica` double NOT NULL,
-  `zipzaporungaRepublica` char(11) NOT NULL,
+  `zipzaporungaRepublica` varchar(66) NOT NULL,
   `idPessoa` int(11) NOT NULL,
   `Logradouro_idLogradouro` int(11) NOT NULL,
   `sexo` tinyint(4) NOT NULL,
   PRIMARY KEY (`idRepublica`),
   KEY `idPessoa_idx` (`idPessoa`),
   KEY `fk_TbRepublica_Logradouro1_idx` (`Logradouro_idLogradouro`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 

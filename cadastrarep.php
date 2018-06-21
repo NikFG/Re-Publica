@@ -116,5 +116,13 @@ and open the template in the editor.
           $conn = null;
           } 
         ?>
+        <script>
+        
+        
+        window.setTimeout("location.href='index.html'",500);
+ 
+
+    </script>
     </body>
+     
 </html>
