@@ -13,6 +13,9 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
         <title>Re-Publica | Login</title>
+
+        
+
     </head>
     <body>
         <div class="container">
@@ -28,9 +31,9 @@
                     <center>
                         <h3 id="titulo">Entre na sua conta</h3>
                         <form method="post" action="logar.php">
-                            <label>Usuário: <input type="text" name="login" placeholder="Digite seu usuário aqui..."></label></p>
-                            <label>Senha: <input type="password" name="senha" placeholder="Digite sua senha aqui..."></label></p> 
-                            <button type="button" class="btn btn-secondary">Cancelar</button>
+                            <label>Usuário: <input type="text" name="login" id="login" placeholder="Digite seu usuário aqui..."></label></p>
+                            <label>Senha: <input type="password" name="senha" id="senha" placeholder="Digite sua senha aqui..."></label></p> 
+                            <a href="index.php"><button type="button" class="btn btn-secondary">Cancelar</button></a>
                             <button type="submit" class="btn btn-primary">Entrar</button>
                             <p>Esqueceu sua senha? <a href="rec_senha.html">Clique aqui</a></p>
                         </form>

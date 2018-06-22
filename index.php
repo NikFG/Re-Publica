@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -19,21 +21,39 @@
                 document.fomrLista.submit();
             }
         </script>
+            
+
     </head>
     <body>
         <div class="container-fluid">
             <div class="row menu">
                 <div class="col-sm-12">
                     <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="cadastro.php">Cadastre-se</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.php">Entrar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="anuncia.php">Anuncie conosco</a>
-                        </li>
+                        
+                        <?php
+
+                        session_start();
+                        if(isset($_SESSION['logado'])){
+                            echo "  <li class='nav-item'>
+                                        <a class='nav-link' href='logout.php'>Sair</a>
+                                    </li>
+                                    <li class='nav-item'>
+                                        <a class='nav-link' href='anunciar.php'>Anuncie conosco</a>
+                                    </li>";
+                        }
+                        else{
+                            echo"
+                            <li class='nav-item'>
+                            <a class='nav-link active' href='cadastro.php'>Cadastre-se</a>
+                            </li>
+                            <li class='nav-item'>
+                                <a class='nav-link' href='login.php'>Entrar</a>
+                            </li>
+                            <li class='nav-item'>
+                                <a class='nav-link' href='anuncia.php'>Anuncie conosco</a>
+                            </li>";
+                        }
+                        ?>
                     </ul>
                 </div>    
             </div>

@@ -22,6 +22,9 @@
                             }});
             });
         </script>
+
+            
+
         <title>Anunciar</title>
     </head>
     <body bgcolor="#d1e0e0" >
@@ -30,10 +33,10 @@
                 <div class="col-sm-12">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Página Inicial</a>
+                            <a class="nav-link active" href="index.php">Página Inicial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Sair</a>
+                            <a class="nav-link" href="logout.php">Sair</a>
                         </li>
                     </ul>
                 </div>    
