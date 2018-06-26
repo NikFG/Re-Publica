@@ -193,7 +193,7 @@
 
 
 
-            <a id="voltar" href="resultadolista.php"><!--BOTAO VOLTAR-->	
+            <a id="voltar" href="index.php"><!--BOTAO VOLTAR-->	
                 <center>
                     <button type="button" class="btn btn-primary">Voltar</button>
                 </center>

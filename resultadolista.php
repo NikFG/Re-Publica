@@ -46,7 +46,7 @@
         <br>
 
 
-        <p><a id="textoResultados">Exibindo resultados para "XXX"..</a></p>
+       
 
         <!--DIVS ABAIXO -->
 

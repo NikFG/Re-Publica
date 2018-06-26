@@ -44,7 +44,7 @@
         <img id="logoSite" src="imgs/logo_transp.png">
         <br>
 
-        <p><a id="textoResultados">Exibindo resultados para "XXX"..</a></p>
+        
 
         <!--DIVS ABAIXO -->
 
