@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <center>
-                            <a href="index.html"><img id="img-logo" src="img/logo_transp.png"></a>
+                            <a href="index.php"><img id="img-logo" src="img/logo_transp.png"></a>
                         </center>
                     </div>
                 </div>

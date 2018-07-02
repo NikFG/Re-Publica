@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"><!--FONTE-->
         <meta http-equiv="content-type" content="txt/html"; charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/resultadoLista.js"></script>
+
         <script type="text/javascript">
             var a;
             function submitform(a) {
@@ -44,13 +45,16 @@
         <img id="logoSite" src="imgs/logo_transp.png">
         <br>
 
-        
+
+       
 
         <!--DIVS ABAIXO -->
 
+        <!--DIVS ABAIXO -->
+        <br>
         <form method="POST" name="formFiltro" action="resultadoFiltro.php">
             <div id="divFiltro" class="container">
-                <b>Valor:</b>	
+                <b>Valor:</b>   
                 <!-- <a id="afiltro150a300" href='javascript: submitformFiltro()'><br>De R$150,00 a R$300,00</a> --><br>
                 <button type="button" id="filtroBotao0" class="btn btn-link" onclick="submitformFiltro0()" value="0">Abaixo de 150</button>
                 <button type="button" id="filtroBotao1" class="btn btn-link" onclick="submitformFiltro()" value="1">De R$150,00 a R$300,00</button>
@@ -68,8 +72,8 @@
 
             </div>
 
-        </form>
 
+        </form>
 
 
         <br><br><br>
@@ -146,23 +150,6 @@
                 $conn = null;
             }
             ?>
-            <!--DIV001
-            <div id="divDoMeio" class="container">
-                <div class="row">
-                    <div id="divAnuncio001" class="col-*-*">
-    
-                        <ul id="ulAnuncio001">
-                            <div class="col-*-*">
-                                <a id="aAnuncio001nome" href="resultadoclick.html"><u><b>República Takalepau</b></u></a><br><!--O ID É ESTE PARA ALTERAR E VER SE MUDA O TEXTO
-                                <a id="aAnuncio001endereco">Endereço: </a><br>
-                                <a id="aAnuncio001contato">Contato:</a><br><br>
-                            </div>
-                        </ul>
-    
-    
-                    </div>
-                </div>
-            </div>-->
             <input type="hidden"  name="codigo" id="codigo">
         </form>
     </div>
@@ -171,6 +158,14 @@
 
 
 </center> 
+<div class="footer">
+    <a id="voltar" href="index.php"><!--BOTAO VOLTAR-->    
+        <center>
+            <button type="button" class="btn btn-primary">Voltar</button>
+        </center>
+    </a>
+</div>
+
 </body>
 
 <br><br><br><br>

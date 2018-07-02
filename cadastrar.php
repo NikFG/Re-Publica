@@ -36,7 +36,7 @@ and open the template in the editor.
     <script>
         
         
-        window.setTimeout("location.href='index.html'",500);
+        window.setTimeout("location.href='index.php'",500);
  
 
     </script>
